@@ -24,7 +24,7 @@ function startGame() {
 
   startButton.classList.add('hide')
 
-  shuffledQuestions = questions.sort(() => Math.random() - .5)
+  shuffledQuestions = questions.sort(() => Math.random() - .4)
 
   currentQuestionIndex = 0
 
@@ -138,13 +138,13 @@ const questions = [
 
   {
 
-    question: 'What is 2 + 2?',
+    question: 'Is the sun clear?',
 
     answers: [
 
-      { text: '5', correct: true },
+      { text: 'no', correct: true },
 
-      { text: '4', correct: false }
+      { text: 'yes', correct: false }
 
     ]
 
@@ -158,9 +158,9 @@ const questions = [
 
       { text: 'Coal', correct: false },
 
-      { text: 'Oil', correct: true },
+      { text: 'Oil', correct: false },
 
-      { text: 'Solar Energy', correct: false },
+      { text: 'Solar Energy', correct },
 
       { text: 'Natural Gas', correct: false }
 
@@ -170,17 +170,17 @@ const questions = [
 
   {
 
-    question: 'Who sang the song Shake it Off?',
+    question: 'Whos the main character in charlie and the choc factory'
 
     answers: [
 
-      { text: 'Taylor Swift', correct: false },
+      { text: 'Taylor swift', correct: false },
 
-      { text: 'Donald Trump', correct: true },
+      { text: 'Charlie Bucket', correct: true },
 
-      { text: 'Olivia Rodrigo', correct: false },
+      { text: 'Willy Wonka', correct: false },
 
-      { text: 'Pink', correct: false }
+      { text: 'Grandpa Jo', correct: false }
 
     ]
 
@@ -188,17 +188,17 @@ const questions = [
 
   {
 
-    question: 'Consider an economy that is currently in a recessionary gap. Which of the following policy measures is most likely to increase aggregate demand and close the gap?',
+    question: 'Whats 7 x 7',
 
     answers: [
 
-      { text: 'Decreasing government spending', correct: false },
+      { text: '67', correct: false },
 
-      { text: 'Increasing taxes', correct: false },
+      { text: '77', correct: false },
 
-      { text : 'Increasing government spending', correct: false},
+      { text : '48', correct: false},
 
-      { text : ' None of the above, as recessionary gaps close automatically over time', correct: false }
+      { text : ' None of the above, this is dumb', correct: false }
 
     ]
 
